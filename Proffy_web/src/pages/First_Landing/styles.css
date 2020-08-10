@@ -1,0 +1,60 @@
+#page-landing {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+}
+
+.loader-container {
+    text-align: center;
+    margin-bottom: 3.2rem;
+    align-items: center;
+
+}
+
+.loader-container h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+
+@media (min-width: 1100px){
+    #page-landing-content {
+        max-width: 1100px;
+
+        display: grid;
+        grid-template-rows: 350px 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: 
+        "logo hero hero "
+        "buttons buttons total "
+        ;
+    }
+
+    .loader-container {
+        grid-area: logo;
+        align-self: center;
+        margin-left: 30rem;
+        text-align: left;
+    }
+
+    .loader-container h2 {
+        text-align: initial;
+        font-size: 3.6rem;
+    }
+
+    .loader-container img {
+        height: 100%;
+    }
+
+    .hero-image {
+        grid-area: hero;
+        justify-self: end;
+    }
+}
