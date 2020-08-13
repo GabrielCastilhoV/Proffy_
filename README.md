@@ -1,7 +1,3 @@
-<h2 align="center">
-    <img alt="Proffy" title="#Proffy" src=".github/logo.png" width="350px" />
-</h2>
-  
 
 ## 📝 Conteúdo
 <p align="center">
@@ -44,7 +40,7 @@ $ cd web
 $ yarn
 $ yarn start
 
-# 📱 Iniciando com o Mobile 🚧 Em Construção...🚧
+# 📱 Iniciando com o Mobile
 
 $ cd mobile
 $ yarn
@@ -56,7 +52,6 @@ $ yarn start
 - 🔵 [TypeScript][typescript]
 - 🟢 [Node Js][nodejs]
 - ❄️ [Knex][knex]
-- 🐘 [Postgres][postgres]
 - ⚛️ [React][reactjs]
 - 🔼 [Expo][expo]
 - ⚛️ [React Native][reactNative]
@@ -81,7 +76,6 @@ Feito por Gabriel Castilho 👋🏽 [Entre em contato!](https://www.linkedin.com
 
 [expo]: https://expo.io/
 [knex]:http://knexjs.org/
-[postgres]: https://www.postgresql.org/
 [nodejs]: https://nodejs.org/en/
 [typescript]: https://www.typescriptlang.org/
 [reactjs]: https://reactjs.org
