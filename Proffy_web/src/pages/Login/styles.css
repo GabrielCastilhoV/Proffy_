@@ -1,0 +1,139 @@
+#page-login {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+}
+
+.loader-container {
+    text-align: center;
+    margin-bottom: 3.2rem;
+    align-items: center;
+
+}
+
+.loader-container h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+#page-login-form main{
+    background: var(--color-box-base);
+    width: 100%;
+    max-width: 74rem;
+    border-radius: 0.8rem;
+    margin: -3.2rem auto 3.2rem;
+    padding-top: 6.4rem;
+    overflow: hidden;
+}
+/*   */
+.logo-container img {
+    height: 10rem;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.logo-container h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    margin: 3.2rem 0;
+}
+
+.buttons-container a {
+    width: 30rem;
+    height: 10.4rem;
+    border-radius: 0.8rem;
+    margin-right: 1.6rem;
+    font: 700 2.0rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: var(--color-button-text);
+
+    transition: background-color 0.2s;
+}
+
+.buttons-container a:first-child {
+    margin-right: 1.6rem;
+}
+
+.buttons-container a img {
+    width: 4rem;
+}
+
+.buttons-container a.fazer-login{
+    background: var(--color-secundary);
+}
+
+.buttons-container a.fazer-login:hover {
+    background: var(--color-secundary-dark);
+}
+
+.buttons-container a.sign-up{
+    background: var(--color-secundary);
+}
+
+.buttons-container a.sign-up:hover {
+    background: var(--color-secundary-dark);
+}
+
+.buttons-container a img {
+    margin-right: 2.4rem;
+}
+
+@media (min-width: 1100px){
+    #page-login-content {
+        max-width: 1100px;
+
+        display: grid;
+        grid-template-rows: 350px 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: 
+        "logo hero hero "
+        "buttons buttons total "
+        ;
+    }
+
+    .loader-container {
+        grid-area: logo;
+        align-self: center;
+        text-align: left;
+    }
+
+    .loader-container h2 {
+        text-align: initial;
+        font-size: 3.6rem;
+    }
+
+    .loader-container img {
+        height: 100%;
+    }
+
+    .hero-image {
+        grid-area: hero;
+        justify-self: end;
+    }
+}
